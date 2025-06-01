@@ -1,0 +1,256 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+
+body{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /**background-image: url(./../pexels-francesco-ungaro-281260.jpg);*/
+    background-size: cover;
+    margin-top: 0px;
+    
+
+    background: linear-gradient(
+        to bottom,
+        hsl(199.04, 100%, 45.1%) 0%,
+        hsl(201.26, 80.33%, 50.55%) 8.1%,
+        hsl(203.21, 78.46%, 55.82%) 15.5%,
+        hsl(204.88, 76.52%, 60.89%) 22.5%,
+        hsl(206.31, 74.45%, 65.72%) 29%,
+        hsl(207.5, 72.17%, 70.31%) 35.3%,
+        hsl(208.5, 69.59%, 74.62%) 41.2%,
+        hsl(209.33, 66.56%, 78.63%) 47.1%,
+        hsl(210.02, 62.87%, 82.31%) 52.9%,
+        hsl(210.58, 58.21%, 85.64%) 58.8%,
+        hsl(211.04, 52.11%, 88.58%) 64.7%,
+        hsl(211.4, 43.96%, 91.09%) 71%,
+        hsl(211.68, 33.11%, 93.14%) 77.5%,
+        hsl(211.88, 19.63%, 94.68%) 84.5%,
+        hsl(212, 6.24%, 95.66%) 91.9%,
+        hsl(0, 0%, 96%) 100%
+    );
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.front-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* centers horizontally */
+    justify-content: center; /* centers vertically */
+    height: 100vh;           /* full viewport height */
+    text-align: center;
+    padding: 0 20px;
+    background-color: #fff; /* optional: adds contrast */
+    font-size: 30px;
+    font-family: "Outfit", sans-serif;
+
+    background: linear-gradient(
+        to bottom,
+        hsl(199.04, 100%, 45.1%) 0%,
+        hsl(201.26, 80.33%, 50.55%) 8.1%,
+        hsl(203.21, 78.46%, 55.82%) 15.5%,
+        hsl(204.88, 76.52%, 60.89%) 22.5%,
+        hsl(206.31, 74.45%, 65.72%) 29%,
+        hsl(207.5, 72.17%, 70.31%) 35.3%,
+        hsl(208.5, 69.59%, 74.62%) 41.2%,
+        hsl(209.33, 66.56%, 78.63%) 47.1%,
+        hsl(210.02, 62.87%, 82.31%) 52.9%,
+        hsl(210.58, 58.21%, 85.64%) 58.8%,
+        hsl(211.04, 52.11%, 88.58%) 64.7%,
+        hsl(211.4, 43.96%, 91.09%) 71%,
+        hsl(211.68, 33.11%, 93.14%) 77.5%,
+        hsl(211.88, 19.63%, 94.68%) 84.5%,
+        hsl(212, 6.24%, 95.66%) 91.9%,
+        hsl(0, 0%, 96%) 100%
+    );
+}
+
+.about-me {
+background: linear-gradient(to right, #00d2ff, #3a7bd5); /* Example gradient */
+clip-path: polygon(0 0, 100% 0, 80% 75%, 0 100%);
+padding: 100px 20px;
+color: white;
+}
+
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* space between image and text */
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.photo {
+  width: 200px;
+  height: auto;
+  border-radius: 10%;
+  box-shadow: 5px 5px 10px black;
+  margin-right: 50px;
+  margin-bottom: 200px;
+  padding: 10px;
+    
+}
+
+h1{
+  font-family: "Outfit", sans-serif;
+}
+
+.about-container p {
+  flex: 1;
+  text-align: justify;
+  margin-top: 50px;
+  font-family: "Outfit", sans-serif;
+}
+
+h1 .about{
+  font-size: 30px;
+}
+
+.skills {
+  background: linear-gradient(to right, #00d2ff, #3a7bd5); /* Example gradient */
+  clip-path: polygon(0 0, 100% 0, 80% 75%, 0 100%);
+  padding: 100px 20px;
+  color: black;
+  margin-top: auto;
+  background: #f0f0f0;;
+}
+
+
+.skills h1{
+  font-size: 30px;
+  margin-bottom: 60px;
+
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;         /* Wraps items to next line if needed */
+  justify-content: center; /* Center the items horizontally */
+  gap: 40px;               /* Space between bullets */
+  list-style: disc;
+  padding-left: 0;
+  margin: 0;
+}
+
+.skills li {
+  list-style-position: inside;  /* Bullet stays inside the item */
+  font-family: "Outfit", sans-serif;
+  font-size: 30px;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+ 
+}
+
+.images img {
+  width: 500px;
+  height: auto;
+  border-radius: 8px; /* optional */
+
+}
+
+.projects-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 1100px;
+  padding: 0 20px;
+}
+
+.project-text {
+  flex: 1;
+}
+
+.project-text p {
+  font-size: 30px;
+  font-family: "Outfit", sans-serif;
+  text-align: justify;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.images img {
+  width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.images img:hover {
+  transform: scale(1.1);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.icon-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* spacing between icons */
+  margin-top: 30px;
+}
+
+.icon-links a {
+  color: #333;
+  font-size: 50px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icon-links a:hover {
+  transform: scale(1.2);
+  color: #007bff; /* optional hover color */
+}
+
+h2{
+  font-family: "Outfit", sans-serif;
+  font-size: 30px;
+}
+
+strong{
+  font-size: 40px;
+  color:black;
+}
+
+.fade-in-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease-out, transform 1s ease-out;
+}
+
+.fade-in-element.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
